@@ -1,0 +1,14 @@
+.navbar {
+    border-left: 3px solid #ffffff;
+    height: 60px;
+}
+
+.navbar-header .navbar-brand {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.navbar .navbar-text {
+    margin-right: 0px;
+}
