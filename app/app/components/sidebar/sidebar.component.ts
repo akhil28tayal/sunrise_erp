@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 })
 
 export class SidebarComponent { 
-    functions = [ 'Sales Order', 'Purchase Order', 'Accounts Payable', 'General Ledger', 'Manufacturing' ]
+    functions = [ 'Sales', 'Purchase', 'Inventory', 'Receivable', 'Payable', 'General Ledger', 'Manufacturing', 'Asset Manager' ]
 }

@@ -1,6 +1,12 @@
 <div id="header">
     <header-footer></header-footer>
 </div>
-<div id="container">
-    <side-bar></side-bar>
-</div>
+<div class="container-fluid">
+    <div class="row" style="margin-left:-30px">
+        <div class="col-sm-3 col-md-3 sidebar">
+            <side-bar></side-bar>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offest-2">
+            <router-outlet></router-outlet>
+        </div>
+    </div>

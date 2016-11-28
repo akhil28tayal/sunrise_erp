@@ -9,20 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var SidebarComponent = (function () {
-    function SidebarComponent() {
-        this.functions = ['Sales', 'Purchase', 'Inventory', 'Receivable', 'Payable', 'General Ledger', 'Manufacturing', 'Asset Manager'];
+var router_1 = require('@angular/router');
+var sales_component_1 = require('./components/sales/sales.component');
+var routes = [
+    { path: '', redirectTo: '/sales', pathMatch: 'full' },
+    { path: 'sales', component: sales_component_1.SalesComponent }
+];
+var AppRoutingModule = (function () {
+    function AppRoutingModule() {
     }
-    SidebarComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'side-bar',
-            templateUrl: '../../htmls/side-bar.html',
-            styleUrls: ['../../styles/sidebar.css']
+    AppRoutingModule = __decorate([
+        core_1.NgModule({
+            imports: [router_1.RouterModule.forRoot(routes)],
+            exports: [router_1.RouterModule]
         }), 
         __metadata('design:paramtypes', [])
-    ], SidebarComponent);
-    return SidebarComponent;
+    ], AppRoutingModule);
+    return AppRoutingModule;
 }());
-exports.SidebarComponent = SidebarComponent;
-//# sourceMappingURL=sidebar.component.js.map
+exports.AppRoutingModule = AppRoutingModule;
+//# sourceMappingURL=app.routes.js.map

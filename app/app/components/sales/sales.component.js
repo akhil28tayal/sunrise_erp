@@ -9,20 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var SidebarComponent = (function () {
-    function SidebarComponent() {
-        this.functions = ['Sales', 'Purchase', 'Inventory', 'Receivable', 'Payable', 'General Ledger', 'Manufacturing', 'Asset Manager'];
+var SalesComponent = (function () {
+    function SalesComponent() {
     }
-    SidebarComponent = __decorate([
+    SalesComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'side-bar',
-            templateUrl: '../../htmls/side-bar.html',
-            styleUrls: ['../../styles/sidebar.css']
+            selector: 'sales',
+            templateUrl: '../../htmls/sales.html',
+            styleUrls: ['../../styles/sales.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], SidebarComponent);
-    return SidebarComponent;
+    ], SalesComponent);
+    return SalesComponent;
 }());
-exports.SidebarComponent = SidebarComponent;
-//# sourceMappingURL=sidebar.component.js.map
+exports.SalesComponent = SalesComponent;
+//# sourceMappingURL=sales.component.js.map
