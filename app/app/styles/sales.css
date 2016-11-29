@@ -1,0 +1,33 @@
+.sub-header {
+    padding-right: 20px;
+    padding-bottom: 10px;
+    color: grey;
+    border-bottom: 1px solid grey;
+}
+
+.placeholders {
+    margin-top: 40px;
+    height: auto;
+    margin-left: 0px;
+}
+
+.placeholder {
+    webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: 3px 3px 5px 6px #ccc;
+    margin-right: 15px;
+    padding: 15px 15px 5px 15px;
+}
+
+h4 {
+    text-align: center;
+    color: grey;
+    margin-top: 15px;
+}
+
+.on-hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

@@ -1,19 +1,23 @@
 <h2 class="sub-header">Transaction</h2>
 <div class="row placeholders">
-    <div class="col-xs-6 col-sm-2 placeholder">
-        <img src="app/images/example.gif" width="200" height="200" class="img-responsive" style="border-radius:50%">
-        <h4>Sales Order</h4>
+    <div class="col-xs-6 col-sm-2 placeholder" (mouseover)="onHover(0)" (mouseout)="onHover(0)">
+        <img src="app/images/sales_order.png" class="img-responsive" [class.on-hover]="isHovered[0] === true">
+        <h4 [class.on-hover]="isHovered[0] === true">Sales Order</h4>
     </div>
-    <div class="col-xs-6 col-sm-2 placeholder">
-        <img src="app/images/example.gif" width="200" height="200" class="img-responsive" style="border-radius:50%">
-        <h4>Sales Order</h4>
+    <div class="col-xs-6 col-sm-2 placeholder" (mouseover)="onHover(1)" (mouseout)="onHover(1)">
+        <img src="app/images/enquiry.svg" class="img-responsive" [class.on-hover]="isHovered[1] === true">
+        <h4 [class.on-hover]="isHovered[1] === true">Sales Order Inquiry</h4>
     </div>
-    <div class="col-xs-6 col-sm-2 placeholder">
-        <img src="app/images/example.gif" width="200" height="200" class="img-responsive" style="border-radius:50%">
-        <h4>Sales Order</h4>
+    <div class="col-xs-6 col-sm-2 placeholder" (mouseover)="onHover(2)" (mouseout)="onHover(2)">
+        <img src="app/images/graph.png" class="img-responsive" [class.on-hover]="isHovered[2] === true">
+        <h4 [class.on-hover]="isHovered[2] === true">Sales Graph</h4>
     </div>
-    <div class="col-xs-6 col-sm-2 placeholder">
-        <img src="app/images/example.gif" width="200" height="200" class="img-responsive" style="border-radius:50%">
-        <h4>Sales Order</h4>
+    <div class="col-xs-6 col-sm-2 placeholder" (mouseover)="onHover(3)" (mouseout)="onHover(3)">
+        <img src="app/images/sales_order.png" class="img-responsive" [class.on-hover]="isHovered[3] === true">
+        <h4 [class.on-hover]="isHovered[3] === true">Sales Order</h4>
+    </div>
+    <div class="col-xs-6 col-sm-2 placeholder" (mouseover)="onHover(4)" (mouseout)="onHover(4)">
+        <img src="app/images/sales_order.png" class="img-responsive" [class.on-hover]="isHovered[4] === true">
+        <h4 [class.on-hover]="isHovered[4] === true">Sales Order</h4>
     </div>
 </div>

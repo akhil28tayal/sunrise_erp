@@ -11,7 +11,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var SalesComponent = (function () {
     function SalesComponent() {
+        this.isHovered = [false, false, false, false, false];
     }
+    SalesComponent.prototype.onHover = function (count) {
+        this.isHovered[count] = !this.isHovered[count];
+    };
     SalesComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
